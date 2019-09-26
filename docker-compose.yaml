@@ -66,11 +66,11 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: "/Users/cherijs/.docker_volumes/.bitcoin"
+      device: "./.docker_volumes/.bitcoin"
       o: bind
   lnd:
     driver: local
     driver_opts:
       type: none
-      device: "/Users/cherijs/.docker_volumes/.lnd"
+      device: "./.docker_volumes/.lnd"
       o: bind
