@@ -11,7 +11,7 @@ ENV CGO_ENABLED=0
 
 RUN apk add --no-cache git make
 
-RUN go get -d github.com/lightningnetwork/lnd && cd $GOPATH/src/github.com/lightningnetwork/lnd && make &&  make install
+RUN go get -d github.com/Roasbeef/lnd@2cd0f9bf27d5025690476101537a9fa3a7d11098 && cd $GOPATH/src/github.com/Roasbeef/lnd && make &&  make install
 
 FROM alpine
 
