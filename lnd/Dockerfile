@@ -15,7 +15,7 @@ RUN git clone https://github.com/Roasbeef/lnd && cd lnd && git checkout 2cd0f9bf
 
 FROM alpine
 
-EXPOSE 9735 10009
+EXPOSE 9735 10009 8080
 
 COPY --from=builder /go/bin/lncli /bin/
 COPY --from=builder /go/bin/lnd /bin/
